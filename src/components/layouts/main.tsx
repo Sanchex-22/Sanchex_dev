@@ -2,16 +2,19 @@ import { AppRoutes } from "../../routes/approutes"
 import Footer from "../ui/footer"
 import Navbar from "../ui/navbar"
 
-function Home() {
+function Layout() {
 
     return (
-      <main>
-        <Navbar></Navbar>
+      <>
+      <Navbar></Navbar>
+      <main> 
         <AppRoutes></AppRoutes>
-        <Footer></Footer>
       </main>
+      <Footer></Footer>
+      </>
+
     )
   }
   
-  export default Home
+  export default Layout
   

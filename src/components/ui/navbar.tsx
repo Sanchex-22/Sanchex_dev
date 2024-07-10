@@ -1,11 +1,13 @@
 function Navbar() {
 
     return (
-      <>
-      <h1>navbar</h1>
-      </>
+      <nav id="navbar" className="w-full bg-jazzberry-jam-100 h-14">
+        <div className="w-full mx-auto max-w-7xl">
+          <p>a</p>
+        </div>
+      </nav>
     )
   }
   
-  export default Navbar
+export default Navbar
   
