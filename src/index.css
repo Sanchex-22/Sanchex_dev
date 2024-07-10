@@ -13,4 +13,28 @@ body{
     background: linear-gradient(to right, #feccec, #8a114b);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+}
+
+.gradient-text-t {
+    background: linear-gradient(to top, #e61c86, #8a114b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.blur-filter { 
+    backdrop-filter: blur(14px); 
+    background-color: rgba(255, 255, 255, 0.05); 
+} 
+
+.gradient-border {
+    position: relative;
+    padding: 2px; /* Space for the gradient border */
+    border-radius: 10px; /* Border radius for the gradient */
+    background: linear-gradient(to right, darkblue, #8a114b); /* Gradient background */
+  }
+  .gradient-border > .content {
+    border-radius: 8px; /* Slightly smaller radius to fit inside the border */
+    background-color: rgba(0, 0, 0, 0.841); /* Content background */
   }
