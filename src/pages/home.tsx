@@ -1,9 +1,9 @@
 import { MdHexagon } from "react-icons/md"
 import Banner from "../components/ui/banner"
-import Img from "../images/cursosmarinos.png"
 import { FaWhatsapp } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa6"
-
+import Card from "../components/ui/cards"
+import { data } from "../data/projects"
 function Home() {
 
   return (
@@ -121,32 +121,10 @@ function Home() {
 
       <section id="proyects" className="h-auto py-4">
         <h3 className="mx-auto max-w-7xl flex justify-center items-center py-2 text-2xl font-bold"><span className="gradient-text-t">My&nbsp;</span>Proyects</h3>
-        <div className="mx-auto max-w-7xl h-72 justify-center items-center grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 md:gap-3 gap-4 place-items-center my-2 px-4 lg:px-0">
-
-          <div className="w-full h-[300px] md:w-full md:h-[300px] gradient-border rounded-lg col-span-2 select-none">
-            <div className="content h-full w-full flex flex-col justify-between gap-2 blur-filter">
-              <img src={Img} alt="" className="object-center object-cover h-40 rounded-t-md" />
-
-              <div className="flex flex-col py-2 px-1">
-                <div className="flex justify-start items-center py-2 gap-2">
-                  <img src={Img} alt="#" className="w-10 h-10 object-center object-cover rounded-full bg-jazzberry-jam-600" />
-                  <div className="flex flex-col">
-                    <p className=" font-semibold">Cursos Marinos</p>
-                    <p className="text-jazzberry-jam-200/50">Landing Page</p>
-                  </div>
-                </div>
-                <a href="#" className="bg-jazzberry-jam-800 rounded-lg hover:bg-jazzberry-jam-700 duration-200 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white focus:ring-4 focus:outline-none">
-                  <div className='w-full flex justify-center items-center gap-2'>
-                    Visit
-                    <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                    </svg>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
+        <div className="mx-auto max-w-7xl h-full justify-center items-center grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 md:gap-3 gap-4 place-items-center my-2 px-4 lg:px-0">
+        {data.map((project, index) => (
+          <Card key={index} data={project}></Card>
+        ))}
         </div>
 
       </section>
@@ -156,7 +134,7 @@ function Home() {
 
         <div className="mx-auto max-w-7xl h-full grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 md:gap-3 gap-4 my-2 px-4 lg:px-0 place-content-center place-items-center">
 
-          <div className="w-full md:w-full h-full rounded-lg col-span-4 select-none flex flex-col justify-center items-center bg-jazzberry-jam-800">
+          <div className="w-full md:w-full h-full rounded-lg col-span-2 md:col-span-4 select-none flex flex-col justify-center items-center bg-jazzberry-jam-800">
             <form action="" className="flex flex-col gap-4 w-full px-4 py-2">
               <p className="py-4 font-semibold">Contact Me</p>
               <div className="flex gap-x-4 items-center">
