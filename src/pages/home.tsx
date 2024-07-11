@@ -1,3 +1,4 @@
+import { MdHexagon } from "react-icons/md"
 import Banner from "../components/ui/banner"
 import Img from "../images/cursosmarinos.png"
 
@@ -12,13 +13,13 @@ function Home() {
 
           <div className="h-full md:w-full flex flex-col md:flex-row justify-center items-center rounded-md">
 
-            <div className="w-1/2 lg:w-1/3 gradient-border h-full rounded-md">
+            <div className="w-full lg:w-1/3 gradient-border animate-pulse h-full rounded-md">
               <div className="content w-full h-full">
                 <img src="" alt="" className="h-56" />
               </div>
             </div>
 
-            <div className="w-1/2 lg:w-2/3 h-full px-2 py-2 md:py-0 flex flex-col items-start text-start gap-2">
+            <div className="w-full lg:w-2/3 h-full px-2 py-2 md:py-0 flex flex-col items-start text-start gap-2">
               <p className="gradient-text-t text-2xl font-semibold">Carlos Sánchez</p>
               <p className="text-jazzberry-jam-200">22 years old</p>
               <p>
@@ -47,18 +48,48 @@ function Home() {
       <section id="skills">
         <h2 className="mx-auto max-w-7xl flex justify-center items-center py-2 text-2xl font-bold"><span className="gradient-text-t">My&nbsp;</span>Skills</h2>
 
-        <div className="mx-auto max-w-7xl h-72 flex justify-center items-center">
-          <div></div>
-          <div></div>
+        <div className="mx-auto max-w-7xl h-72 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 px-4 lg:px-0">
+
+          <ul className="col-span-1 md:col-span-2 border flex flex-col justify-start">
+            <li className="flex justify-start items-center gap-2">
+              <MdHexagon className="h-10 w-10"/>
+              <p>Habilidad</p>
+            </li>
+
+            <li className="flex justify-start items-center gap-2">
+              <MdHexagon className="h-10 w-10"/>
+              <p>Habilidad</p>
+            </li>
+
+          </ul>
+
+          <div className="col-span-1 md:col-span-2 border flex-col justify-start hidden lg:block">
+            2
+          </div>
+
+          <ul className="col-span-1 md:col-span-2 border flex flex-col justify-start">
+            <li className="flex justify-end items-center gap-2">
+              <p>Habilidad</p>
+              <MdHexagon className="h-10 w-10"/>
+              
+            </li>
+
+            <li className="flex justify-end items-center gap-2">
+              <p>Habilidad</p>
+              <MdHexagon className="h-10 w-10"/> 
+            </li>
+
+          </ul>
+
         </div>
 
       </section>
 
       <section id="proyects" className="h-auto">
         <h3 className="mx-auto max-w-7xl flex justify-center items-center py-2 text-2xl font-bold"><span className="gradient-text-t">My&nbsp;</span>Proyects</h3>
-        <div className="mx-auto max-w-7xl h-72 justify-center items-center grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 md:gap-3 gap-4 place-items-center my-2">
+        <div className="mx-auto max-w-7xl h-72 justify-center items-center grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 md:gap-3 gap-4 place-items-center my-2 px-4 lg:px-0">
 
-          <div className="w-[250px] h-[250px] md:w-[250px] md:h-[250px] gradient-border rounded-lg col-span-2">
+          <div className="w-full h-[300px] md:w-full md:h-[300px] gradient-border rounded-lg col-span-2">
             <div className="content h-full w-full flex flex-col justify-between gap-2 blur-filter">
               <img src={Img} alt="" className="object-center object-cover h-40 rounded-t-md" />
 

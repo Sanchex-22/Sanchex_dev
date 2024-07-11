@@ -15,7 +15,7 @@ function Banner(){
                 </div>
                 <div className="flex flex-col justify-center items-center col-start-1 -col-end-1 row-start-6 row-end-8 py-2 z-20 gap-2">
                     <div className="flex flex-col justify-center items-center">
-                        <p className="text-7xl gradient-text-t shadow-text font-semibold">Carlos Sánchez</p>
+                        <p className="text-7xl gradient-text-t shadow-text font-semibold text-center">Carlos Sánchez</p>
                         <p className="text-4xl gradient-text-t font-medium animate-pulse">Web Developer</p>
                     </div>
 {/* 
