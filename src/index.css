@@ -50,3 +50,37 @@ body{
     border-radius: 8px; /* Slightly smaller radius to fit inside the border */
     background-color: rgba(0, 0, 0, 0.841); /* Content background */
   }
+
+  
+.btn-whatsapp-pulse-border {
+    animation-play-state: paused;
+  }
+  
+  .btn-whatsapp-pulse-border::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    border-radius: 50%;
+    padding: 20px;
+    border: 5px solid #8a114b;
+    opacity: 0.75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      padding: 25px;
+      opacity: 0.75;
+    }
+    75% {
+      padding: 40px;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

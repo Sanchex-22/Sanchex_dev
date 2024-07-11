@@ -52,15 +52,42 @@ function Home() {
 
         <div className="mx-auto max-w-7xl h-72 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 px-4 lg:px-0">
 
-          <ul className="col-span-1 md:col-span-2 border flex flex-col justify-start">
+          <ul className="col-span-1 md:col-span-2 border flex flex-col justify-center">
             <li className="flex justify-start items-center gap-2">
-              <MdHexagon className="h-10 w-10"/>
-              <p>Habilidad</p>
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
             </li>
 
             <li className="flex justify-start items-center gap-2">
-              <MdHexagon className="h-10 w-10"/>
-              <p>Habilidad</p>
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-800"/>
+            </li>
+
+            <li className="flex justify-start items-center gap-2">
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-800"/>
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-700"/>
+            </li>
+
+            <li className="flex justify-start items-center gap-2">
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-800"/>
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-700"/>
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-600"/>
+            </li>
+
+            <li className="flex justify-start items-center gap-2">
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-800"/>
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-700"/>
+            </li>
+
+            <li className="flex justify-start items-center gap-2">
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-800"/>
+            </li>
+
+            <li className="flex justify-start items-center gap-2">
+              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
             </li>
 
           </ul>
@@ -69,16 +96,21 @@ function Home() {
             2
           </div>
 
-          <ul className="col-span-1 md:col-span-2 border flex flex-col justify-start">
-            <li className="flex justify-end items-center gap-2">
-              <p>Habilidad</p>
-              <MdHexagon className="h-10 w-10"/>
-              
+          <ul className="col-span-1 md:col-span-2 flex flex-col justify-start">
+            <li className="flex justify-end items-center gap-2 border-y-2">
+              <p>React</p>
             </li>
 
-            <li className="flex justify-end items-center gap-2">
-              <p>Habilidad</p>
-              <MdHexagon className="h-10 w-10"/> 
+            <li className="flex justify-end items-center gap-2 border-y-2">
+              <p>Java</p>
+            </li>
+
+            <li className="flex justify-end items-center gap-2 border-y-2">
+              <p>Tailwindcss</p>
+            </li>
+
+            <li className="flex justify-end items-center gap-2 border-y-2">
+              <p>MySQL</p>
             </li>
 
           </ul>
