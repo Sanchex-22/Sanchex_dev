@@ -1,6 +1,8 @@
-import { MdHexagon } from "react-icons/md"
+import { MdEmail, MdHexagon } from "react-icons/md"
 import Banner from "../components/ui/banner"
 import Img from "../images/cursosmarinos.png"
+import { FaWhatsapp } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa6"
 
 function Home() {
 
@@ -85,11 +87,11 @@ function Home() {
 
       </section>
 
-      <section id="proyects" className="h-auto">
+      <section id="proyects" className="h-auto py-4">
         <h3 className="mx-auto max-w-7xl flex justify-center items-center py-2 text-2xl font-bold"><span className="gradient-text-t">My&nbsp;</span>Proyects</h3>
         <div className="mx-auto max-w-7xl h-72 justify-center items-center grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 md:gap-3 gap-4 place-items-center my-2 px-4 lg:px-0">
 
-          <div className="w-full h-[300px] md:w-full md:h-[300px] gradient-border rounded-lg col-span-2">
+          <div className="w-full h-[300px] md:w-full md:h-[300px] gradient-border rounded-lg col-span-2 select-none">
             <div className="content h-full w-full flex flex-col justify-between gap-2 blur-filter">
               <img src={Img} alt="" className="object-center object-cover h-40 rounded-t-md" />
 
@@ -117,12 +119,41 @@ function Home() {
 
       </section>
 
-      <section id="contact">
+      <section id="contact" className="bg-gradient bg-gradient-to-t from-black from-50% via-black/50 to-jazzberry-jam-600/20 py-4 h-auto">
         <h2 className="mx-auto max-w-7xl flex justify-center items-center py-2 text-2xl font-bold"><span className="gradient-text-t">My&nbsp;</span>Contact</h2>
 
-        <div className="mx-auto max-w-7xl h-72 flex justify-center items-center">
-          <div></div>
-          <div></div>
+        <div className="mx-auto max-w-7xl h-full grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 md:gap-3 gap-4 my-2 px-4 lg:px-0 place-content-center place-items-center">
+
+          <div className="w-full md:w-full h-full rounded-lg col-span-4 select-none flex flex-col justify-center items-center bg-jazzberry-jam-800">
+            <form action="" className="flex flex-col gap-4 w-full px-4 py-2">
+              <p className="py-4 font-semibold">Contact Me</p>
+              <div className="flex gap-x-4 items-center">
+                <label htmlFor="name">Name:</label>
+                <input type="text" className="rounded-sm py-1 bg-white/70 text-black/60"/>
+              </div>
+
+              <div className="flex gap-x-7 items-center">
+              <label htmlFor="name">Mail:</label>
+                <input type="email" className="rounded-sm py-1 bg-white/70 text-black/60"/>
+              </div>
+
+              <div className="flex flex-col">
+                <label htmlFor="desciption" className="">Description:</label>
+                <textarea name="description" id="" className="max-h-14 bg-white/70 border text-black/60 rounded-sm"></textarea>
+              </div>
+
+              <button className="bg-jazzberry-jam-900 px-4 py-2 rounded-md">Enviar</button>
+            </form>
+          </div>
+
+          <div className="w-full h-full md:w-full rounded-lg col-span-1 select-none flex flex-col justify-center items-center bg-slate-700/50 border border-jazzberry-jam-300">
+            <FaWhatsapp className="w-10 h-10"/>
+          </div>
+
+          <div className="w-full h-full md:w-full rounded-lg col-span-1 select-none flex flex-col justify-center items-center bg-slate-700/50 border border-jazzberry-jam-300">
+            <FaLinkedin className="w-10 h-10"/>
+          </div>
+
         </div>
 
       </section>
