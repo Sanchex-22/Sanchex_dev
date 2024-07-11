@@ -1,4 +1,4 @@
-import { MdEmail, MdHexagon } from "react-icons/md"
+import { MdHexagon } from "react-icons/md"
 import Banner from "../components/ui/banner"
 import Img from "../images/cursosmarinos.png"
 import { FaWhatsapp } from "react-icons/fa"
