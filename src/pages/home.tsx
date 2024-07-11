@@ -59,7 +59,13 @@ function Home() {
 
       </section>
 
-      <section id="hobbies">
+      <section id="contact">
+        <h2 className="mx-auto max-w-7xl flex justify-center items-center py-2 text-2xl font-bold"><span className="gradient-text-t">My&nbsp;</span>Contact</h2>
+
+        <div className="mx-auto max-w-7xl h-72 flex justify-center items-center">
+          <div></div>
+          <div></div>
+        </div>
 
       </section>
     </>

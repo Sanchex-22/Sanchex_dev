@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 40%, black 40%)',
+      },
       colors:{
           'jazzberry-jam-50': '#fef1f9',
           'jazzberry-jam-100': '#fde6f5',

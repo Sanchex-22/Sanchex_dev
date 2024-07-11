@@ -5,6 +5,9 @@
 body{
     background-color: black;
     color: white;
+    font-family: "Roboto", sans-serif;
+    /* background-color: white;
+    color: black; */
 }
 
 .gradient-text {
@@ -20,7 +23,16 @@ body{
     background: linear-gradient(to top, #e61c86, #8a114b);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
 
+.shadow-text{
+    text-shadow: -4px 4px 1px rgba(255, 255, 255, 0.956);
+}
+
+.gradient-text-t-banner {
+    background: linear-gradient(to top, #e61c86, #8a114b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .blur-filter { 
