@@ -1,3 +1,5 @@
+import { FaGithub } from "react-icons/fa"
+
 function Navbar() {
 
     return (
@@ -6,12 +8,16 @@ function Navbar() {
         <div className="w-full mx-auto max-w-7xl h-full flex justify-between items-center px-4 md:px-4 lg:px-0">
           <p className="gradient-text">Carlos Sanchez</p>
 
-          <div className="flex items-center gap-4">
-            <p className="border border-custom-black-600 rounded-sm px-4 py-1">GitHub</p>
+          <div className="flex items-center gap-4 select-none">
+          <a href="https://github.com/Sanchex-22" className="flex items-center justify-center gap-1 border border-custom-black-600 rounded-sm px-4 py-1 duration-200 hover:bg-jazzberry-jam-600 hover:border-white">
+            <FaGithub />
+            <p className="">GitHub</p>
+            </a>
+            
             <div className="bg-jazzberry-jam-900 h-10 w-10 rounded-full"></div>
           </div>
-        </div>
 
+        </div>
       </nav>
     )
   }

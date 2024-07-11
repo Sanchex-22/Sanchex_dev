@@ -18,7 +18,7 @@ function Banner(){
                         <p className="text-7xl gradient-text-t shadow-text font-semibold">Carlos Sánchez</p>
                         <p className="text-4xl gradient-text-t font-medium animate-pulse">Web Developer</p>
                     </div>
-
+{/* 
                     <a href="#" className="bg-jazzberry-jam-800 rounded-lg hover:bg-chocolate-800 hover:translate-y-0.5 duration-200 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white focus:ring-4 focus:outline-none">
                         <div className='w-full flex justify-center items-center gap-2'>
                         Download CV
@@ -28,7 +28,7 @@ function Banner(){
                                 <line x1="12" y1="15" x2="12" y2="3"></line>
                             </svg>
                         </div>
-                    </a>
+                    </a> */}
                     
                 </div>
 
