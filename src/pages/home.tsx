@@ -1,11 +1,12 @@
-import { MdHexagon } from "react-icons/md"
 import Banner from "../components/ui/banner"
 import { FaWhatsapp } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa6"
 import Card from "../components/ui/cards"
 import { data } from "../data/projects"
+import { data_skill } from "../data/skills"
+import { data_soft_skill } from "../data/soft_skills"
 function Home() {
-
+  console.log(data_skill)
   return (
     <>
       <Banner></Banner>
@@ -25,8 +26,11 @@ function Home() {
               <p className="gradient-text-t text-2xl font-semibold">Carlos Sánchez</p>
               <p className="text-jazzberry-jam-200">22 years old</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, incidunt, officia ab id magnam qui voluptatum nobis reprehenderit distinctio sed repudiandae voluptatem necessitatibus molestias, consequuntur natus.
-                Eum nihil similique enim.
+              Poseo conocimientos fundamentales en la creación y mantenimiento de aplicaciones web y móviles, así como un fuerte compromiso con el aprendizaje continuo y el crecimiento profesional. 
+              <br />
+              Mis habilidades y competencias incluyen:
+              Desarrollo Frontend y Backend: Experiencia práctica en la implementación de interfaces de usuario atractivas y funcionales utilizando HTML, CSS y JavaScript para el frontend, y en el desarrollo de lógica de negocio y manejo de bases de datos con tecnologías como Node.js, Express para el backend.
+
               </p>
 
               <a href="#" className="bg-jazzberry-jam-800 rounded-lg hover:bg-chocolate-800 hover:translate-y-0.5 duration-200 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white focus:ring-4 focus:outline-none">
@@ -52,68 +56,39 @@ function Home() {
 
         <div className="mx-auto max-w-7xl h-72 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 px-4 lg:px-0">
 
-          <ul className="col-span-1 md:col-span-2 border flex flex-col justify-center">
-            <li className="flex justify-start items-center gap-2">
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
+          <ul className="col-span-1 md:col-span-2 flex flex-col justify-center gap-2">
+            {data_skill.map((skill,index)=>(
+            <li key={index} className="flex justify-start items-center gap-2">
+              <div className="border rounded-full p-2">
+                {skill.img}
+              </div>
+              <p>{skill.name}</p>
+              <hr className="hidden md:block bg-jazzberry-jam-100 w-1/2"/>
             </li>
+            ))}
 
-            <li className="flex justify-start items-center gap-2">
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-800"/>
-            </li>
-
-            <li className="flex justify-start items-center gap-2">
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-800"/>
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-700"/>
-            </li>
-
-            <li className="flex justify-start items-center gap-2">
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-800"/>
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-700"/>
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-600"/>
-            </li>
-
-            <li className="flex justify-start items-center gap-2">
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-800"/>
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-700"/>
-            </li>
-
-            <li className="flex justify-start items-center gap-2">
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-800"/>
-            </li>
-
-            <li className="flex justify-start items-center gap-2">
-              <MdHexagon className="h-10 w-10 text-jazzberry-jam-900"/>
-            </li>
 
           </ul>
 
-          <div className="col-span-1 md:col-span-2 border flex-col justify-start hidden lg:block">
-            2
+          <div className="col-span-1 md:col-span-2 h-full w-full hidden lg:block">
+            <div className="w-full h-full flex flex-col justify-center items-center">
+              <div className="w-56 h-56 rounded-full bg-gradient-to-r from-jazzberry-jam-100 via-jazzberry-jam-200 opacity-15 blur"></div>
+            </div>
           </div>
-
-          <ul className="col-span-1 md:col-span-2 flex flex-col justify-start">
-            <li className="flex justify-end items-center gap-2 border-y-2">
-              <p>React</p>
+          
+          <ul className="col-span-1 md:col-span-2 flex flex-col justify-center gap-2">
+          {data_soft_skill.map((skill,index)=>(
+            <li key={index} className="flex justify-end items-center gap-2">
+              <hr className="hidden md:block bg-jazzberry-jam-100 w-1/2"/>
+              <p>{skill.name}</p>
+              <div className="border rounded-full p-2">
+                {skill.img}
+              </div>
             </li>
-
-            <li className="flex justify-end items-center gap-2 border-y-2">
-              <p>Java</p>
-            </li>
-
-            <li className="flex justify-end items-center gap-2 border-y-2">
-              <p>Tailwindcss</p>
-            </li>
-
-            <li className="flex justify-end items-center gap-2 border-y-2">
-              <p>MySQL</p>
-            </li>
+          ))}
 
           </ul>
+        
 
         </div>
 
